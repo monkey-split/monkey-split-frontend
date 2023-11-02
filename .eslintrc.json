@@ -1,11 +1,15 @@
 {
-  "extends": ["next", "next/core-web-vitals", "plugin:@typescript-eslint/recommended", "prettier"],
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
   "globals": {
     "React": "readonly"
   },
   "rules": {
     "prefer-const": "warn",
     "@typescript-eslint/no-explicit-any": "error"
-
   }
 }
