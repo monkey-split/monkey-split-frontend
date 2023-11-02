@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" className="h-full min-h-full">
-      <body className={(lexend.className, 'h-full min-h-full')}>
+    <html lang="fr" className={`${lexend.className} h-full min-h-full`}>
+      <body className="h-full min-h-full">
         <div className="min-height-full m-0 h-full">
           <Navbar />
           <div className="box-border h-full min-h-full pt-28">{children}</div>
