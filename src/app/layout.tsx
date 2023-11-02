@@ -16,15 +16,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr">
-      <body
-        className={(lexend.className, 'max-h-screen w-full overflow-hidden')}
-      >
-        <div className="flex h-screen flex-col">
-          <div className="block h-fit shrink-0">
-            <Navbar />
-          </div>
-          <div className="flex h-full flex-1 flex-col">{children}</div>
+    <html lang="fr" className="h-full min-h-full">
+      <body className={(lexend.className, 'h-full min-h-full')}>
+        <div className="min-height-full m-0 h-full">
+          <Navbar />
+          <div className="box-border h-full min-h-full pt-28">{children}</div>
         </div>
       </body>
     </html>

@@ -1,6 +1,6 @@
-<div style="text-align:center">
 <img src="./public/logos/logo-128.png" class="align-center">
-</div>
+
+# Mon(k)ey Split
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
