@@ -1,6 +1,6 @@
-import { Split } from '@/models/split'
+import { Group } from '@/models/group'
 
-export const splitsMock: Split[] = [
+export const splitsMock: Group[] = [
   {
     id: 0,
     name: 'Voyage en France',

@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <h1>Hello World</h1>
       <p>{test}</p>
-      <Link href="/splits">
+      <Link href="/groups">
         <p className="m-5 w-fit rounded-xl bg-emerald-600 p-5 font-bold text-white hover:bg-emerald-500">
           Go to splits
         </p>
