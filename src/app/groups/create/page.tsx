@@ -3,6 +3,8 @@ import { createGroup } from '../http-group.service'
 import { revalidateTag } from 'next/cache'
 import { redirect } from 'next/navigation'
 import { cookies } from 'next/headers'
+import TextInput from '@/components/input/text-input'
+import TextArea from '@/components/input/text-area'
 
 const GROUP_COOKIE = 'groupId_cookie'
 
@@ -47,42 +49,31 @@ export default function CreateGroupPage() {
           className="flex w-80 flex-col items-center gap-5"
           action={createGroupAction}
         >
-          <div className="flex w-full flex-col">
-            <label htmlFor="name">Nom du split</label>
-            <input
-              required
-              className="h-14 border p-2"
-              type="text"
-              name="name"
-              id="name"
-              data-form-type="other"
-            />
-          </div>
-          <div className="flex w-full flex-col">
-            <label htmlFor="description">Description</label>
-            <textarea
-              className="h-28 border p-2"
-              name="description"
-              id="description"
-              data-form-type="other"
-            />
-          </div>
-          <div className="flex w-full flex-col">
-            <label htmlFor="creator">Ton nom</label>
-            <input
-              required
-              className="h-14 border p-2"
-              type="text"
-              name="creator"
-              id="creator"
-              data-form-type="other"
-            />
-          </div>
+          <TextInput
+            required
+            name="name"
+            id="name"
+            label="Nom du split"
+            placeholder="Nom du split"
+            additionalClasses="input-primary"
+          />
+          <TextArea
+            name="description"
+            id="description"
+            label="Description"
+            placeholder="Description"
+            additionalClasses="input-primary h-28"
+          />
+          <TextInput
+            required
+            name="creator"
+            id="creator"
+            label="Ton nom"
+            placeholder="Ton nom"
+            additionalClasses="input-primary"
+          />
 
-          <button
-            type="submit"
-            className="m-5 w-full rounded-xl border-2 border-lime-700 bg-gradient-to-r from-amber-400 to-lime-500 p-5 font-bold text-black hover:border-black hover:shadow-lg"
-          >
+          <button type="submit" className="btn btn-accent w-full">
             Create
           </button>
         </form>

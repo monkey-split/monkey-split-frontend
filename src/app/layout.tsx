@@ -16,7 +16,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" className={`${lexend.className} h-full min-h-full`}>
+    <html
+      lang="fr"
+      className={`${lexend.className} h-full min-h-full`}
+      data-theme="lemonade"
+    >
       <body className="h-full min-h-full">
         <div className="min-height-full m-0 h-full">
           <Navbar />
