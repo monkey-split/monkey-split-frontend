@@ -1,11 +1,11 @@
 export type TextInputProps = {
-  placeholder?: string
+  id?: string
+  name?: string
   label?: string
   required?: boolean
   type?: string
-  name?: string
+  placeholder?: string
   dataFormType?: string
-  id?: string
   additionalClasses?: string
   formControlLabel?: string
 }
